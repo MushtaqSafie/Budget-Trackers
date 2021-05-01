@@ -35,7 +35,7 @@ I WANT to be able to track my withdrawals and deposits with or without a data/in
 * lite-server
 
 ## ScreenShot
-![ScreenShot1](https://raw.githubusercontent.com/MushtaqSafie/Budget-Trackers/main/media/Capture.JPG)
+![ScreenShot1](https://raw.githubusercontent.com/MushtaqSafie/Budget-Trackers/main/media/ScreenShot.JPG)
 
 ## Questions
 **My GitHub Profile**: [MushtaqSafie](https://github.com/MushtaqSafie)
