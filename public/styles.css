@@ -1,26 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-size: 120%;
   font-family: Arial;
+  background-color: rgb(194, 243, 234);
 }
 
-button, input {
-  font-size: 100%;
-  font-family: Arial;
-}
-
+/* Transaction table style */
 table {
   width: 100%;
+  border-collapse: collapse;
+  border: 1px solid rgb(24, 135, 131);
+  background: white;
 }
-
-td, th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
+th {
+  background: rgb(24, 135, 131);
+  height: 44px;
+  font-weight: lighter;
+  text-shadow: 0 1px 0 rgb(24, 135, 131);
+  border: 1px solid rgb(24, 135, 131);
+  box-shadow: inset 0px 1px 2px rgb(24, 135, 131);
+  padding: 10px;
+  color: white;
+}
+tr {
+  border-bottom: 1px solid #cccccc;
+}
+tr:last-child {
+  border-bottom: 0px;
+}
+td {
+  border-right: 1px solid #cccccc;
+  padding: 10px;
+}
+td:last-child {
+  border-right: 0px;
 }
 
 tr:nth-child(even) {
   background-color: #dddddd;
 }
+
 
 .error {
   color: red;
@@ -32,20 +54,84 @@ tr:nth-child(even) {
   text-align: center;
 }
 
+
 .total {
-  font-size: 150%;
-  text-decoration: underline;
+  margin-bottom: 20px;
+  padding-right: 10px;
+  font-size: 180%;
+  text-align: right;
+  color: #2a2c2c;
+  display: inline;
+}
+
+.logo {
+  width: 380px;
 }
 
 .form {
   margin-top: 25px;
   width: 100%;
+  text-align: left;
+}
+
+button, input {
+  font-size: 100%;
+  font-family: Arial;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+
+input {
+  width: 48%;
 }
 
 .transactions {
+  padding: 5px;
   text-align: left;
   max-height: 300px;
   overflow: auto;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
+  background-color: rgb(40, 156, 143);
+  border-radius: 5px;
+}
+
+.chart {
+  padding: 5px;
+  overflow: auto;
+  width: 100%;
+  margin: 0 auto;
+  background-color: rgb(238, 255, 253);
+  border-radius: 5px;
+}
+
+/* transaction table scroll-bar styling */
+html {
+  --scrollbarBG: #b2dff3;
+  --thumbBG: rgb(24, 135, 131);
+}
+.transactions::-webkit-scrollbar {
+  width: 11px;
+}
+.transactions {
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+.transactions::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+}
+.transactions::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG) ;
+  border-radius: 6px;
+  border: 3px solid var(--scrollbarBG);
+}
+
+@media only screen and (max-width: 820px) {
+  .total {
+    text-align: center;
+    display: block;
+  }
+  
 }
