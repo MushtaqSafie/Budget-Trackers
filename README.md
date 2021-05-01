@@ -1,13 +1,24 @@
 # Budget-Trackers
 
 ## Description
-Workout Tracker is an express application build with Node.js & mongoDB. 
+Budget Tracker is an Online/Offine application build with Node.js & mongoDB. 
+
+The user will be able to add expenses and deposits to their budget with or without a connection. When entering transactions offline, they should populate the total when brought back online.
+Offline Functionality:
+
+* Enter deposits offline
+* Enter expenses offline
+
+When brought back online:
+
+* Offline entries should be added to tracker.
 
 ### User Story
-As a user, I want to be able to view create and track daily workouts. I want to be able to log multiple exercises in a workout on a given day. I should also be able to track the name, type, weight, sets, reps, and duration of exercise. If the exercise is a cardio exercise, I should be able to track my distance traveled.
+AS AN avid traveller
+I WANT to be able to track my withdrawals and deposits with or without a data/internet connection SO THAT my account balance is accurate when I am traveling
 
 ### Deployed application Link
-> [Workout Tracker](https://budget-tracker841.herokuapp.com/)
+> [Budget Tracker](https://budget-tracker841.herokuapp.com/)
 
 ## Table of Contents
 - [Description](#Description)
@@ -19,6 +30,9 @@ As a user, I want to be able to view create and track daily workouts. I want to 
 * Express
 * Mongoose (mongoDB)
 * morgan
+* IndexedDB
+* compression
+* lite-server
 
 ## ScreenShot
 ![ScreenShot1](https://raw.githubusercontent.com/MushtaqSafie/Budget-Trackers/main/media/Capture.JPG)
